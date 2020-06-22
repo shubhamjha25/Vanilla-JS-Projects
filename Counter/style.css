@@ -1,0 +1,36 @@
+.container{
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.my-div{
+    position: absolute;
+    top: 28%;
+    left: 40%;
+}
+
+h1{
+    margin-left: 4rem;
+}
+
+span{
+    font-size: 6rem;
+    margin-left: 7rem;
+}
+
+.btn{
+    margin-top: 15px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 10%;
+    margin-right: 1rem;
+    padding: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s ease;
+}

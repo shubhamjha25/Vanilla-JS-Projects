@@ -1,0 +1,57 @@
+:root{
+    --initColor: #0080ff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--initColor);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto;;
+
+}
+nav{
+    padding: 0.5rem 2rem 0.5rem;
+    background-color: aqua;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-div{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+h4{
+    font-size: 40px;
+    color: white;
+}
+
+button{
+    width: 170px;
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    font-size: 17px;
+    border-radius: 100%;
+    margin-left: 5em;
+    outline: none;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
