@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: tomato;
+}
+
+.logo{
+    color: whitesmoke;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.links li{
+    list-style: none;
+}
+
+.links a{
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.links a:hover{
+    color: black;
+}
+
+.my-bar{
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media (max-width: 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 1rem;
+        position: relative;
+    }
+    .my-bar{
+        cursor: pointer;
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 10px;
+        right: 2%;
+        z-index: 9999;
+    }
+    .links{
+        display: none;
+    }
+    .top{
+        margin-top: 0.65rem;
+    }
+    .active{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;  
+        padding-left: 1rem;
+    }
+}
