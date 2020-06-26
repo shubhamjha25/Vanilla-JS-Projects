@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="position: absolute; top: 15px; left: 25px; font-size: 50px; letter-spacing: 5px;">CALULATOR</h1>
+    <div class="container">
+        <textarea name="" id="" cols="30" rows="3"></textarea>
+
+        <table class="calcBtns">
+            <tr>
+                <td onclick="eraseAll()">C</td>
+                <td onclick="erase()">CE</td>
+                <td onclick="operation('.')">.</td>
+                <td onclick="operation('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="operation('7')">7</td>
+                <td onclick="operation('8')">8</td>
+                <td onclick="operation('9')">9</td>
+                <td onclick="operation('*')">*</td>
+            </tr>
+            <tr>
+                <td onclick="operation('4')">4</td>
+                <td onclick="operation('5')">5</td>
+                <td onclick="operation('6')">6</td>
+                <td onclick="operation('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="operation('1')">1</td>
+                <td onclick="operation('2')">2</td>
+                <td onclick="operation('3')">3</td>
+                <td onclick="operation('-')">-</td>
+            </tr>
+            <tr>
+                <td colspan="3" onclick="operation('0')">0</td>
+                <td onclick="ans()">=</td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    <!-- JavaScrip t-->
+    <script src="app.js"></script>
+</body>
+</html>
