@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Table Search</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 50px;
+            margin: 10px 0;
+        }
+
+        #myInput{
+            margin: 20px 0;
+            padding: 20px 15px;
+            font-size: 20px;
+        }
+
+        .container{
+            max-width: 1000px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        table, th, td {
+            padding: 2px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        table{
+            border: 2.5px solid black;
+        }
+
+        th{
+            font-size: 25px;
+        }
+
+        th, td{
+            border: 1.8px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>FILTER TALE SEARCH</h1>
+
+        <input type="text" name="" id="myInput" placeholder="Enter Name To Search .." onkeyup="searchFunction()">
+
+        <table id="myTable">
+            <tr class="header">
+                <th style="width: 40%;">Name</th>
+                <th style="width: 20%;">Degree</th>
+                <th style="width: 40%;">Profession</th>
+            </tr>
+            <tr>
+                <td>Shubham</td>
+                <td>B.Tech</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Anjali</td>
+                <td>BCA</td>
+                <td>Socail Media Manager</td>
+            </tr>
+            <tr>
+                <td>Soham</td>
+                <td>B.Tech</td>
+                <td>Android Developer</td>
+            </tr>
+            <tr>
+                <td>Harsh</td>
+                <td>B.Tech</td>
+                <td>Machine Learning Engineer</td>
+            </tr>
+            <tr>
+                <td>Riya</td>
+                <td>B.Com</td>
+                <td>Sales & Marketing</td>
+            </tr>
+            <tr>
+                <td>Swaraj</td>
+                <td>B.Tech</td>
+                <td>Full Stack Developer</td>
+            </tr>
+            <tr>
+                <td>Prachi</td>
+                <td>MBA</td>
+                <td>HR Person</td>
+            </tr>
+            <tr>
+                <td>Abhishek</td>
+                <td>B.Tech</td>
+                <td>Python Developer</td>
+            </tr>
+            <tr>
+                <td>Ruchira</td>
+                <td>B.A</td>
+                <td>Instructor</td>
+            </tr>
+            <tr>
+                <td>Bhuvnesh</td>
+                <td>BCA</td>
+                <td>Front-End Web Developer</td>
+            </tr>
+            <tr>
+                <td>Amaya</td>
+                <td>B.Tech</td>
+                <td>Backend Web Developer</td>
+            </tr>
+            <tr>
+                <td>Komal</td>
+                <td>B.Sc</td>
+                <td>Content Writer</td>
+            </tr>
+            <tr>
+                <td>Shikha</td>
+                <td>B.Tech</td>
+                <td>Data Scientist</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
