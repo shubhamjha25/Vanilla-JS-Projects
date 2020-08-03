@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Image Gallery Filter</title>
+</head>
+<body>
+    <section class="gallery">
+        <div class="container">
+            <div class="heading">
+                <h1>My Image Gallery Filter</h1>
+            </div>
+            <div class="filter-btn">
+                <ul class="btns">
+                    <li id="all" onclick="filterAll()" class="all">All</li>
+                    <li id="bat" onclick="filterBat()" class="bat">Bats</li>
+                    <li id="ball" onclick="filterBall()" class="ball">Balls</li>
+                    <li id="equip" onclick="filterEquip()" class="equip">Equips</li>
+                </ul>
+            </div>
+            <div class="items">
+                <div class="TheBALL">
+                    <img src="./images/Ball1.png" alt="BALL">
+                </div>
+                <div class="TheBAT">
+                    <img src="./images/Bat1.png" alt="BAT">
+                </div>
+                <div class="TheEQUIP">
+                    <img src="./images/Dress1.png" alt="EQUIP">
+                </div>
+                <div class="TheBALL">
+                    <img src="./images/Ball2.jpg" alt="BALL">
+                </div>
+                <div class="TheEQUIP">
+                    <img class="e1" src="./images/Dress2.jpg" alt="EQUIP">
+                </div>
+                <div class="TheBAT">
+                    <img src="./images/Bat2.jpeg" alt="BAT">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
