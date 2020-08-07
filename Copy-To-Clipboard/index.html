@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy To Clipboard</title>
+
+    <!-- CSS -->
+    <style>
+        div{
+            position: absolute;
+            top: 45%;
+            left: 40%;
+        }
+        input{
+            padding: 10px 15px;
+            border: 1.5px solid black;
+            border-radius: 10px;
+        }
+        .btn{
+            border: 1.5px solid blue;
+            background: blue;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background: none;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <input type="text" placeholder="Enter Text" id="myInput">
+        <button class="btn" onclick="myFunction()">Copy Text</button>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            document.execCommand("copy");
+                        
+            alert("Copied the Text: " + copyText.value);
+        }
+
+    </script>
+</body>
+</html>
